@@ -17,6 +17,7 @@ const Header = ({ currentUser }) => (
           {item.title.toUpperCase()}
         </Link>
       ))}
+
       {currentUser ? (
         <div className='option' onClick={e => auth.signOut()}>
           SIGN OUT
